@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# Hardhat Lottery Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project uses **Hardhat** to compile, test and deploy a lottery smart contract.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+The smart contract uses **Chainlink VRF** to generate a random number and choose a winner. It also uses a **Chainlink Keeper** to automatically check if there's balance and players so it can request a random number and send the balance to the winner.
